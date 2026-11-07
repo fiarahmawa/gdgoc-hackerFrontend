@@ -1,6 +1,6 @@
 import heroImage from '../assets/GDGoC-UGM-identity.png';
 import iconIg from '../assets/Instagram.png';
-import iconYt from '../assets/Youtube.png';
+import iconYt from '../assets/youtube.png';
 
 export default function Footer({}) {
   return (

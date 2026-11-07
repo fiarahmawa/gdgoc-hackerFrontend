@@ -1,6 +1,3 @@
-import iconIg from '../assets/Instagram.png';
-import iconYt from '../assets/Youtube.png';
-import heroImage from '../assets/GDGoC-UGM-identity.png';
 import cardRnD from '../assets/rnd.png';
 import cardDnc from '../assets/dnc.png';
 import cardDev from '../assets/dev.png';
