@@ -1,20 +1,63 @@
 import heroImage from '../assets/GDGoC-UGM-identity.png';
 import { ArrowRight } from 'lucide-react';
-export default function Navbar({ setCurrentPage }) {
+
+export default function Navbar({ currentPage, setCurrentPage }) {
   return (
     <nav className="w-[1440px] mx-auto flex justify-between items-center pl-[64px] pr-[64px] pb-[30px] pt-[30px] bg-white border-b border-lineGrey">
       {/* Logo */}
       <div className="flex items-center gap-3">
         <img src={heroImage} alt="Logo" className="h-10" />
-        
       </div>
 
       {/* Menu */}
       <div className="flex items-center gap-[8px] font-base text-sm font-regular text-brandGrey">
-        <button onClick={() => setCurrentPage('landing')} className="text-textBlue bg-brandLightBlue pt-[14px] pr-[20px] pb-[14px] pl-[20px] rounded-[100px] font-bold">Home</button>
-        <button onClick={() => setCurrentPage('about')} className="hover:text-blue-600 pt-[14px] pr-[20px] pb-[14px] pl-[20px]">About</button>
-        <button className="hover:text-blue-600 pt-[14px] pr-[20px] pb-[14px] pl-[20px]">Overview</button>
-        <button className="hover:text-blue-600 pt-[14px] pr-[20px] pb-[14px] pl-[20px]">Contact</button>
+        {/* Tombol Home */}
+        <button 
+          onClick={() => setCurrentPage('landing')} 
+          className={`pt-[14px] pr-[20px] pb-[14px] pl-[20px] rounded-[100px] transition-all ${
+            currentPage === 'landing' 
+              ? 'text-textBlue bg-brandLightBlue font-bold' 
+              : 'hover:text-blue-600 font-normal'
+          }`}
+        >
+          Home
+        </button>
+
+        {/* Tombol About */}
+        <button 
+          onClick={() => setCurrentPage('about')} 
+          className={`pt-[14px] pr-[20px] pb-[14px] pl-[20px] rounded-[100px] transition-all ${
+            currentPage === 'about' 
+              ? 'text-textBlue bg-brandLightBlue font-bold' 
+              : 'hover:text-blue-600 font-normal'
+          }`}
+        >
+          About
+        </button>
+
+        {/* Tombol Overview (bisa disesuaikan nanti jika sudah ada halamannya) */}
+        <button 
+          onClick={() => setCurrentPage('overview')} 
+          className={`pt-[14px] pr-[20px] pb-[14px] pl-[20px] rounded-[100px] transition-all ${
+            currentPage === 'overview' 
+              ? 'text-textBlue bg-brandLightBlue font-bold' 
+              : 'hover:text-blue-600 font-normal'
+          }`}
+        >
+          Overview
+        </button>
+
+        {/* Tombol Contact */}
+        <button 
+          onClick={() => setCurrentPage('contact')} 
+          className={`pt-[14px] pr-[20px] pb-[14px] pl-[20px] rounded-[100px] transition-all ${
+            currentPage === 'contact' 
+              ? 'text-textBlue bg-brandLightBlue font-bold' 
+              : 'hover:text-blue-600 font-normal'
+          }`}
+        >
+          Contact
+        </button>
       </div>
 
       {/* Button */}

@@ -7,6 +7,7 @@ import cardComS from '../assets/comspark.png';
 import iconIg from '../assets/Instagram.png';
 import iconYt from '../assets/Youtube.png';
 import code2 from '../assets/code2.png';
+
 import { ArrowRight, BookOpen, Code, Users, ChevronDown } from 'lucide-react';
 import { FaInstagram, FaYoutube } from 'react-icons/fa';
 export default function LandingPage() {

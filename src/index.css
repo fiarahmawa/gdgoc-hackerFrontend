@@ -17,7 +17,6 @@
     --color-brandLightOrange: #FDEDEA;
     --color-brandLightBlue: #EAF2FF;
    
-
     --color-textBlue: #1967D2;
     --color-textBlack: #242424;
 
@@ -25,6 +24,11 @@
     
     --color-trackblue: #EAF2FF;
     --color-trackorange: #FFF7DF;
-    --color-trackgreen: #EAF5ED;
-    
+    --color-trackgreen: #EAF5ED; 
+}
+
+@utility text-gradientblue {
+    background: linear-gradient(180deg, #1967D2 0%, #6FACFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
