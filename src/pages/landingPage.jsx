@@ -1,15 +1,10 @@
 import landingImage from '../assets/ideas-coming-together.png';
-import heroImage from '../assets/GDGoC-UGM-identity.png';
 import cardRnD from '../assets/rnd.png';
 import cardDnc from '../assets/dnc.png';
 import cardDev from '../assets/dev.png';
 import cardComS from '../assets/comspark.png';
-import iconIg from '../assets/Instagram.png';
-import iconYt from '../assets/Youtube.png';
-import code2 from '../assets/code2.png';
 
 import { ArrowRight, BookOpen, Code, Users, ChevronDown } from 'lucide-react';
-import { FaInstagram, FaYoutube } from 'react-icons/fa';
 export default function LandingPage() {
     const tracks = [
         {
@@ -92,586 +87,512 @@ export default function LandingPage() {
         },
     ];
 
-
-
     return (
         <>
-            {/* Bagian Hero Section */}
-            <div className="w-[1440px] h-[600px] mx-auto pl-[96px] pr-[64px] pt-[72px] pb-[64px] flex flex-col lg:flex-row items-start justify-between gap-[40px]">
+            {/* Hero Section */}
+            <div className="w-full bg-brandWhite">
+                <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[96px] pt-[40px] md:pt-[72px] pb-[40px] md:pb-[64px] flex flex-col lg:flex-row items-center justify-between gap-[40px]">
 
-                {/* Bagian Kiri: Teks & Tombol */}
-                <div className="max-w-[620px] max-h-[431px] flex flex-col gap-[28px]">
-                    <div className="flex items-center gap-2">
-                        {/* Titik kustom */}
-                        <span className="w-[7px] h-[7px] rounded-full bg-brandBlue inline-block"></span>
-
-                        {/* Teks */}
-                        <span className="font-base text-[12px] font-medium tracking-wider text-brandGrey uppercase">
-                            GDGOC UGM • 2026/2027
-                        </span>
-                    </div>
-
-                    <h1 className="font-base lg:text-[80px] font-extrabold text-gray-900 leading-tight">
-                        Big ideas. <br />
-                        <span className="text-textBlue">Built together.</span>
-                    </h1>
-
-                    <p className="text-brandGrey text-[21px] font-normal font-base leading-relaxed">
-                        A place for curious minds at <strong className="text-brandGrey">Universitas Gadjah Mada</strong> to learn, connect, and build technology that matters.
-                    </p>
-
-                    <div className="flex items-center gap-4">
-                        <button className="bg-brandBlue text-white font-base font-medium px-6 py-3 rounded-[8px] shadow-md transition-all flex items-center gap-[16px]">
-                            Find your learning track
-                            <ArrowRight size={20} />
-                        </button>
-                        <button className="border border-gray-300 hover:bg-gray-50 text-textBlue font-base font-medium px-6 py-3 rounded-[8px] transition-all flex items-center gap-[16px]">
-                            Get to know us
-                            <ArrowRight size={20} />
-                        </button>
-                    </div>
-
-                    {/* Footer Kecil di bawah teks */}
-                    <div className="flex items-center gap-3 font-base text-xs text-gray-500">
-                        <div className="flex items-center -space-x-1.5">
-                            <span className="w-[16px] h-[16px] border-2 border-brandWhite rounded-full bg-brandRed"></span>
-                            <span className="w-[16px] h-[16px] border-2 border-brandWhite rounded-full bg-brandOrange"></span>
-                            <span className="w-[16px] h-[16px] border-2 border-brandWhite rounded-full bg-brandGreen"></span>
-                            <span className="w-[16px] h-[16px] border-2 border-brandWhite rounded-full bg-brandBlue"></span>
-                        </div>
-                        <span>Different backgrounds. A shared curiosity.</span>
-                    </div>
-                </div>
-
-                {/* Bagian Kanan: Gambar Ilustrasi Hero dari Figma */}
-                <div className="max-w-[620px] flex justify-center">
-                    <img
-                        src={landingImage}
-                        alt="Logo"
-                        className="w-[620px] h-auto object-cover"
-                    />
-                </div>
-
-            </div>
-
-            {/* Bagian Baris Tiga Poin Fitur di Bawah */}
-            <div className="w-[1440px] mx-auto border-t border-b border-lineGrey pl-[96px] pr-[96px] pt-[26px] pb-[26px]">
-                <div className="flex flex-row items-center justify-between text-textBlack font-base text-[18px] font-medium">
-                    <div className="flex items-center gap-3">
-                        <span className="w-[8px] h-[8px] bg-brandBlue"></span>
-                        <span>Learn by doing</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                        <span className="w-[8px] h-[8px] bg-brandRed"></span>
-                        <span>Connect across disciplines</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                        <span className="w-[8px] h-[8px] bg-brandGreen"></span>
-                        <span>Build with purpose</span>
-                    </div>
-                </div>
-            </div>
-
-            <div className="w-[1440px] mx-auto pl-[96px] pr-[96px] pt-[88px] pb-[88px] flex flex-col lg:flex-row items-start justify-between gap-[96px]">
-                <div className="w-[490px] flex flex-col gap-[20px]">
-                    <div className="flex items-center gap-2">
-                        {/* Titik kustom */}
-                        <span className="w-[7px] h-[7px] rounded-full bg-brandBlue inline-block"></span>
-
-                        {/* Teks */}
-                        <span className="font-base text-[12px] font-medium tracking-wider text-brandGrey uppercase">
-                            A CAMPUS. A COMMUNITY.
-                        </span>
-                    </div>
-
-                    <h1 className="font-base lg:text-[48px] font-bold text-textBlack leading-tight">
-                        Not just learning <br />
-                        tech. <br />
-                        Finding your people.
-                    </h1>
-
-                    {/* Tombol Aksi */}
-                    <div className="flex items-center">
-                        <button className=" hover:bg-gray-50 text-textBlue text-[16px] font-base font-medium transition-all flex items-center gap-[12px]">
-                            More about GDGoC UGM
-                            <ArrowRight size={20} />
-                        </button>
-                    </div>
-
-                </div>
-                <div className="w-[662px] max-h-[431px] flex flex-col gap-[28px]">
-
-                    <p className="text-brandGrey text-[21px] font-regular font-base leading-relaxed">
-                        Google Developer Groups on Campus, Universitas Gadjah Mada brings students together around one simple idea: we can go <span className="font-bold">further</span> when we <span className="font-bold">learn</span> with each other.
-                    </p>
-                    <p className="text-brandGrey text-[18px] font-regular font-base leading-relaxed">
-                        From your first line of code to your next product idea, there’s room to ask questions, share what you know, and try something new.
-                    </p>
-                    <div className="w-[364px] flex flex-row justify-between gap-[12px]">
-                        <button className="bg-brandLightGrey hover:bg-gray-50 text-[13px] text-brandGrey font-base font-bold pt-[8px] pb-[8px] pr-[14px] pl-[14px] rounded-[100px] transition-all flex items-center ">
-                            Student-led
-                        </button>
-                        <button className="bg-brandLightGrey hover:bg-gray-50 text-[13px] text-brandGrey font-base font-bold pt-[8px] pb-[8px] pr-[14px] pl-[14px] rounded-[100px] transition-all flex items-center ">
-                            Peer-powered
-                        </button>
-                        <button className="bg-brandLightGrey hover:bg-gray-50 text-[13px] text-brandGrey font-base font-bold pt-[8px] pb-[8px] pr-[14px] pl-[14px] rounded-[100px] transition-all flex items-center ">
-                            Curiosity-first
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div className="w-[1440px] mx-auto pl-[96px] pr-[96px] pt-[16px] pb-[88px] flex flex-col items-start justify-between gap-[36px]">
-                <div className="w-[1248px] flex flex-col gap-[36px]">
-                    <div className="w-[800px] flex items-center gap-2">
-                        {/* Titik kustom */}
-                        <span className="w-[7px] h-[7px] rounded-full bg-brandBlue inline-block"></span>
-
-                        {/* Teks */}
-                        <span className="font-base text-[12px] font-medium tracking-wider text-brandGrey uppercase">
-                            FIND YOUR STARTING POINT
-                        </span>
-                    </div>
-
-                    <h1 className="font-base lg:text-[48px] font-bold text-textBlack leading-tight">
-                        Many interests. One shared <br />
-                        journey. <br />
-                    </h1>
-
-                    <div className="w-full flex items-end justify-between">
-                        <p className="text-brandGrey text-[18px] font-regular font-base leading-relaxed">
-                            Follow what excites you. Explore a track, then connect the dots with others.
-                        </p>
-
-                        <a href="#overview" className="inline-flex items-center gap-[12px] text-textBlue text-[16px] font-medium transition-all hover:opacity-80 shrink-0">
-                            See the overview
-                            <ArrowRight size={20} />
-                        </a>
-                    </div>
-
-                </div>
-                {/* Section Tracks */}
-                <div className="w-[1248px] flex flex-col gap-[24px]">
-                    <div className="grid grid-cols-3 gap-[24px]">
-                        {tracks.map((track, index) => (
-                            <div
-                                key={index}
-                                className="w-[400px] h-[539px] flex flex-col bg-brandWhite border border-lineGrey rounded-[20px] overflow-hidden"
-                            >
-                                {/* Gambar Asset */}
-                                <div className={`w-[400px] h-[232px] ${track.bgColor} relative overflow-visible`}>
-                                    <img
-                                        src={track.image}
-                                        alt={track.title}
-                                        className="w-[257px] h-[257px] object-cover absolute left-1/2 -translate-x-1/2 top-[-12px]"
-                                    />
-                                </div>
-
-                                {/* Teks & Konten */}
-                                <div className="w-[400px] p-[28px] flex flex-col  flex-1 gap-[18px]">
-                                    <div className="flex flex-col gap-[18px]">
-                                        <span className="text-[11px] font-base font-bold tracking-wider text-textBlue uppercase">
-                                            {track.category}
-                                        </span>
-                                        <h3 className="text-[28px] font-base font-bold text-brandDarkGrey leading-snug">
-                                            {track.title}
-                                        </h3>
-                                        <p className="text-[16px] font-base text-brandGrey leading-relaxed">
-                                            {track.description}
-                                        </p>
-                                    </div>
-
-                                    <div className="w-[344px] border-t border-lineGrey flex flex-col gap-[18px]">
-                                        <span className="inline-block mt-[18px] text-[13px] font-base text-brandGrey font-regular">
-                                            {track.tags}
-                                        </span>
-                                        <button className="inline-flex items-center gap-2 text-textBlue font-base font-medium text-[16px] hover:opacity-80 transition-opacity w-fit">
-                                            Explore this track
-                                            <ArrowRight size={18} />
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-
-            <div className="w-[1440px] mx-auto pl-[96px] pr-[96px] pt-[80px] pb-[80px] bg-brandLightGrey flex flex-col items-start justify-between gap-[40px]">
-                <div className="w-[1248px] flex flex-col gap-[18px]">
-                    <div className="w-[800px] flex items-center gap-2">
-                        {/* Titik kustom */}
-                        <span className="w-[7px] h-[7px] rounded-full bg-brandBlue inline-block"></span>
-
-                        {/* Teks */}
-                        <span className="font-base text-[12px] font-medium tracking-wider text-brandGrey uppercase">
-                            MORE THAN A CLASSROOM
-                        </span>
-                    </div>
-
-                    <h1 className="font-base lg:text-[48px] font-bold text-textBlack leading-tight">
-                        Less Watching. More Making.
-                    </h1>
-
-                    <p className="text-brandGrey text-[18px] font-regular font-base leading-relaxed">
-                        Learn in a way that turns a new concept into something you can actually use.
-                    </p>
-
-                </div>
-                {/* Section Tracks */}
-                <div className="w-[1248px] flex flex-col gap-[24px]">
-                    <div className="grid grid-cols-3 gap-[24px]">
-                        {program.map((program, index) => (
-                            <div
-                                key={index}
-                                className="w-[400px] h-[291px] flex flex-col bg-white rounded-[24px]"
-                            >
-
-                                {/* Teks & Konten */}
-                                <div className="w-[400px] p-[28px] flex flex-col  flex-1 gap-[18px]">
-                                    <div className="flex flex-col gap-[18px]">
-                                        <div className="text-textBlue">
-                                            {program.icon}
-                                        </div>
-                                        <h3 className="text-[28px] font-base font-bold text-brandDarkGrey leading-snug">
-                                            {program.title}
-                                        </h3>
-                                        <p className="text-[16px] font-base text-brandGrey leading-relaxed">
-                                            {program.description}
-                                        </p>
-                                    </div>
-
-                                    <div className="w-[344px] border-t border-lineGrey flex flex-col gap-[18px]">
-                                        <button className="inline-flex items-center gap-2 text-textBlue font-base font-medium text-[13px] hover:opacity-80 transition-opacity w-fit mt-[18px]">
-                                            {program.link}
-                                            <ArrowRight size={18} />
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-
-            <div className="w-[1440px] mx-auto pl-[96px] pr-[96px] pt-[88px] pb-[88px] flex flex-col lg:flex-row items-center justify-between gap-[64px]">
-                <div className="w-[592px]  bg-brandLightYellow rounded-[32px] p-[40px] flex flex-col justify-between relative overflow-hidden gap-[24px]">
-
-                    {/* Header Atas: Label & Ikon Code */} 
-                    <div className="flex items-center justify-between w-[512px]">
-                        <span className="text-[12px] font-base font-regular tracking-wider text-brandGrey uppercase">
-                            IDEA → PROTOTYPE
-                        </span>
-                        <p className="w-[30px] h-[31px] font-base font-regular text-[24px] text-textBlue">
-                            {"</>"}
-                        </p>
-                    </div>
-
-                    {/* Kontainer Kartu Putih di Dalam */}
-                    <div className=" w-[512px] bg-white rounded-[24px] p-[26px] border border-lineGrey flex flex-col gap-[24px]">
-
-                        {/* Indikator Titik Tiga (Merah, Kuning, Hijau) */}
-                        <div className="flex items-center gap-[8px]">
-                            <span className="w-[10px] h-[10px] rounded-full bg-brandRed"></span>
-                            <span className="w-[10px] h-[10px] rounded-full bg-amber-400"></span>
-                            <span className="w-[10px] h-[10px] rounded-full bg-brandGreen"></span>
+                    <div className="w-full lg:max-w-[620px] flex flex-col gap-[28px]">
+                        <div className="flex items-center gap-2">
+                            <span className="w-[7px] h-[7px] rounded-full bg-brandBlue inline-block"></span>
+                            <span className="font-base text-[12px] font-medium tracking-wider text-brandGrey uppercase">
+                                GDGOC UGM • 2026/2027
+                            </span>
                         </div>
 
-                        {/* Judul Utama */}
-                        <h2 className="w-[460px] text-[32px] font-base font-bold text-textBlack leading-tight">
-                            A little less friction. <br />
-                            A better campus day.
+                        <h1 className="font-base text-[40px] md:text-[60px] lg:text-[80px] font-extrabold text-gray-900 leading-tight">
+                            Big ideas. <br />
+                            <span className="text-textBlue">Built together.</span>
+                        </h1>
+
+                        <p className="text-brandGrey text-[18px] md:text-[21px] font-normal font-base leading-relaxed">
+                            A place for curious minds at <strong className="text-brandGrey">Universitas Gadjah Mada</strong> to learn, connect, and build technology that matters.
+                        </p>
+
+                        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                            <button className="bg-brandBlue text-white font-base font-medium px-6 py-3 rounded-[8px] shadow-md transition-all flex items-center justify-center gap-[16px] hover:opacity-90">
+                                Find your learning track
+                                <ArrowRight size={20} />
+                            </button>
+                            <button className="border border-gray-300 hover:bg-gray-50 text-textBlue font-base font-medium px-6 py-3 rounded-[8px] transition-all flex items-center justify-center gap-[16px]">
+                                Get to know us
+                                <ArrowRight size={20} />
+                            </button>
+                        </div>
+
+                        <div className="flex items-center gap-3 font-base text-xs text-gray-500">
+                            <div className="flex items-center -space-x-1.5 shrink-0">
+                                <span className="w-[16px] h-[16px] border-2 border-brandWhite rounded-full bg-brandRed"></span>
+                                <span className="w-[16px] h-[16px] border-2 border-brandWhite rounded-full bg-brandOrange"></span>
+                                <span className="w-[16px] h-[16px] border-2 border-brandWhite rounded-full bg-brandGreen"></span>
+                                <span className="w-[16px] h-[16px] border-2 border-brandWhite rounded-full bg-brandBlue"></span>
+                            </div>
+                            <span>Different backgrounds. A shared curiosity.</span>
+                        </div>
+                    </div>
+
+                    <div className="w-full lg:max-w-[620px] flex justify-center shrink-0">
+                        <img
+                            src={landingImage}
+                            alt="Logo"
+                            className="w-full max-w-[620px] h-auto object-cover rounded-2xl"
+                        />
+                    </div>
+
+                </div>
+            </div>
+
+            {/* Sub-navigation Bar */}
+            <div className="w-full bg-brandWhite border-t border-b border-lineGrey">
+                <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[96px] py-[20px] md:py-[26px] overflow-x-auto">
+                    <div className="flex flex-row items-center justify-between text-textBlack font-base text-[16px] md:text-[18px] font-medium min-w-max gap-8">
+                        <div className="flex items-center gap-3">
+                            <span className="w-[8px] h-[8px] bg-brandBlue shrink-0"></span>
+                            <span>Learn by doing</span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <span className="w-[8px] h-[8px] bg-brandRed shrink-0"></span>
+                            <span>Connect across disciplines</span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <span className="w-[8px] h-[8px] bg-brandGreen shrink-0"></span>
+                            <span>Build with purpose</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Section Comm Introduction */}
+            <div className="w-full bg-brandWhite">
+                <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[96px] py-[60px] md:py-[88px] flex flex-col lg:flex-row items-start justify-between gap-[40px] lg:gap-[96px]">
+                    
+                    <div className="w-full lg:w-[490px] flex flex-col gap-[20px] shrink-0">
+                        <div className="flex items-center gap-2">
+                            <span className="w-[7px] h-[7px] rounded-full bg-brandBlue inline-block"></span>
+                            <span className="font-base text-[12px] font-medium tracking-wider text-brandGrey uppercase">
+                                A CAMPUS. A COMMUNITY.
+                            </span>
+                        </div>
+
+                        <h2 className="font-base text-[32px] md:text-[40px] lg:text-[48px] font-bold text-textBlack leading-tight">
+                            Not just learning <br />
+                            tech. <br />
+                            Finding your people.
                         </h2>
 
-                        {/* Tombol Tab Pilihan (Discover, Connect, Share) */}
-                        <div className="w-[460px] flex items-center gap-[12px]">
-                            {/* Tombol 1: Discover */}
-                            <div className="w-[145.33px] p-[16px] bg-trackblue rounded-[12px] font-base font-bold text-brandBlack text-[13px] cursor-pointer">
-                                Discover
-                            </div>
-
-                            {/* Tombol 2: Connect */}
-                            <div className="w-[145.33px] p-[16px] bg-trackgreen rounded-[12px] font-base font-bold text-brandBlack text-[13px] cursor-pointer">
-                                Connect
-                            </div>
-
-                            {/* Tombol 3: Share */}
-                            <div className="w-[145.33px] p-[16px] bg-brandLightOrange rounded-[12px] font-base font-bold text-brandBlack text-[13px] cursor-pointer">
-                                Share
-                            </div>
+                        <div className="flex items-center">
+                            <button className="hover:opacity-80 text-textBlue text-[16px] font-base font-medium transition-all flex items-center gap-[12px] w-fit">
+                                More about GDGoC UGM
+                                <ArrowRight size={20} />
+                            </button>
                         </div>
+                    </div>
 
-                        {/* Subteks Keterangan di Bawah */}
-                        <p className="text-[16px] font-base text-brandGrey pt-[8px]">
-                            Start with a student need. Build a small, useful solution.
+                    <div className="w-full lg:w-[662px] flex flex-col gap-[28px]">
+                        <p className="text-brandGrey text-[18px] md:text-[21px] font-normal font-base leading-relaxed">
+                            Google Developer Groups on Campus, Universitas Gadjah Mada brings students together around one simple idea: we can go <span className="font-bold">further</span> when we <span className="font-bold">learn</span> with each other.
                         </p>
-
+                        <p className="text-brandGrey text-[16px] md:text-[18px] font-normal font-base leading-relaxed">
+                            From your first line of code to your next product idea, there’s room to ask questions, share what you know, and try something new.
+                        </p>
+                        <div className="w-full max-w-[364px] flex flex-wrap gap-[12px]">
+                            <span className="bg-brandLightGrey text-[13px] text-brandGrey font-base font-bold py-[8px] px-[14px] rounded-[100px] inline-flex items-center">
+                                Student-led
+                            </span>
+                            <span className="bg-brandLightGrey text-[13px] text-brandGrey font-base font-bold py-[8px] px-[14px] rounded-[100px] inline-flex items-center">
+                                Peer-powered
+                            </span>
+                            <span className="bg-brandLightGrey text-[13px] text-brandGrey font-base font-bold py-[8px] px-[14px] rounded-[100px] inline-flex items-center">
+                                Curiosity-first
+                            </span>
+                        </div>
                     </div>
 
-                        <span className="text-[11px] font-base font-regular tracking-wider text-brandGrey uppercase">
-                            EXAMPLE PROJECT BRIEF · NOT A LAUNCHED PRODUCT
-                        </span>
-
-                </div>
-                <div className="w-[592px] flex flex-col gap-[28px]">
-
-                    <div className="flex items-center gap-2">
-                        {/* Titik kustom */}
-                        <span className="w-[7px] h-[7px] rounded-full bg-brandBlue inline-block"></span>
-
-                        {/* Teks */}
-                        <span className="font-base text-[12px] font-medium tracking-wider text-brandGrey uppercase">
-                            BUILD SOMETHING THAT MATTERS
-                        </span>
-                    </div>
-
-                    <h1 className="font-base lg:text-[48px] font-bold text-textBlack leading-tight">
-                        Your next project could <br />
-                        start on campus <br />
-                    </h1>
-                    <p className="text-brandGrey text-[18px] font-regular font-base leading-relaxed">
-                        What if finding a study partner, sharing resources, or navigating campus felt easier? Small, familiar problems can be the beginning of meaningful work.
-                    </p>
-                    <p className="text-brandGrey text-[16px] font-regular font-base leading-relaxed">
-                        Bring research, design, and development together. Try an idea, get feedback, and make the next version better.
-                    </p>
-
-                    {/* Tombol Aksi */}
-                    <div className="flex items-center">
-                        <button className=" hover:bg-gray-50 text-textBlue text-[16px] font-base font-medium transition-all flex items-center gap-[12px]">
-                            Explore project-based learning
-                            <ArrowRight size={20} />
-                        </button>
-                    </div>
                 </div>
             </div>
 
-            <div className="w-[1440px] mx-auto pl-[96px] pr-[96px] pt-[8px] pb-[88px] bg-brandWhite flex flex-col items-start justify-between gap-[40px]">
-                <div className="w-[1248px] flex flex-col gap-[18px]">
-                    <div className="w-[800px] flex items-center gap-2">
-                        {/* Titik kustom */}
-                        <span className="w-[7px] h-[7px] rounded-full bg-brandBlue inline-block"></span>
+            {/* Section Track Discover */}
+            <div className="w-full bg-brandWhite">
+                <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[96px] pt-[16px] pb-[60px] md:pb-[88px] flex flex-col items-start justify-between gap-[36px]">
+                    
+                    <div className="w-full flex flex-col gap-[24px]">
+                        <div className="flex items-center gap-2">
+                            <span className="w-[7px] h-[7px] rounded-full bg-brandBlue inline-block"></span>
+                            <span className="font-base text-[12px] font-medium tracking-wider text-brandGrey uppercase">
+                                FIND YOUR STARTING POINT
+                            </span>
+                        </div>
 
-                        {/* Teks */}
-                        <span className="font-base text-[12px] font-medium tracking-wider text-brandGrey uppercase">
-                            MAKE YOUR FIRST MOVE
-                        </span>
+                        <h2 className="font-base text-[32px] md:text-[40px] lg:text-[48px] font-bold text-textBlack leading-tight">
+                            Many interests. One shared journey.
+                        </h2>
+
+                        <div className="w-full flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4">
+                            <p className="text-brandGrey text-[16px] md:text-[18px] font-normal font-base leading-relaxed max-w-[600px]">
+                                Follow what excites you. Explore a track, then connect the dots with others.
+                            </p>
+                            <a href="#overview" className="inline-flex items-center gap-[12px] text-textBlue text-[16px] font-medium transition-all hover:opacity-80 shrink-0">
+                                See the overview
+                                <ArrowRight size={20} />
+                            </a>
+                        </div>
                     </div>
 
-                    <h1 className="font-base lg:text-[48px] font-bold text-textBlack leading-tight">
-                        You don't need to have it all <br />
-                        figured out
-                    </h1>
-                </div>
-                {/* Section Tracks */}
-                <div className="w-[1248px] flex flex-col gap-[40px]">
-                    <div className="grid grid-cols-3 gap-[24px]">
-                        {participateJ.map((item, index) => (
-                            <div
-                                key={index}
-                                className="w-[400px] h-[291px] flex flex-col bg-white rounded-[24px]"
-                            >
+                    <div className="w-full">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+                            {tracks.map((track, index) => (
+                                <div
+                                    key={index}
+                                    className="w-full flex flex-col bg-brandWhite border border-lineGrey rounded-[20px] overflow-hidden"
+                                >
+                                    <div className={`w-full h-[232px] ${track.bgColor} relative overflow-hidden`}>
+                                        <img
+                                            src={track.image}
+                                            alt={track.title}
+                                            className="w-[257px] h-[257px] object-cover absolute left-1/2 -translate-x-1/2 top-[-12px]"
+                                        />
+                                    </div>
 
-                                {/* Teks & Konten */}
-                                <div className="w-[390px] flex flex-col  flex-1 gap-[20px]">
-                                    <div className="flex flex-col gap-[18px]">
-                                        <div className="text-textBlue text-[44px] font-bold font-base">
-                                            {item.num}
+                                    <div className="p-[28px] flex flex-col flex-1 justify-between gap-[18px]">
+                                        <div className="flex flex-col gap-[18px]">
+                                            <span className="text-[11px] font-base font-bold tracking-wider text-textBlue uppercase">
+                                                {track.category}
+                                            </span>
+                                            <h3 className="text-[24px] md:text-[28px] font-base font-bold text-brandDarkGrey leading-tight">
+                                                {track.title}
+                                            </h3>
+                                            <p className="text-[15px] md:text-[16px] font-base text-brandGrey leading-normal">
+                                                {track.description}
+                                            </p>
                                         </div>
-                                        <h3 className="text-[25px] font-base font-bold text-brandDarkGrey leading-snug border-t border-lineGrey pt-[20px]">
+
+                                        <div className="pt-[18px] border-t border-lineGrey flex flex-col gap-[18px]">
+                                            <span className="text-[13px] font-base text-brandGrey font-normal">
+                                                {track.tags}
+                                            </span>
+                                            <button className="inline-flex items-center gap-[8px] text-textBlue font-base font-medium text-[16px] hover:opacity-80 transition-opacity w-fit">
+                                                Explore this track
+                                                <ArrowRight size={18} />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            {/* Section Learn Formats */}
+            <div className="w-full bg-brandLightGrey">
+                <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[96px] py-[60px] md:py-[80px] flex flex-col items-start justify-between gap-[40px]">
+                    
+                    <div className="w-full flex flex-col gap-[18px]">
+                        <div className="flex items-center gap-2">
+                            <span className="w-[7px] h-[7px] rounded-full bg-brandBlue inline-block"></span>
+                            <span className="font-base text-[12px] font-medium tracking-wider text-brandGrey uppercase">
+                                MORE THAN A CLASSROOM
+                            </span>
+                        </div>
+
+                        <h2 className="font-base text-[32px] md:text-[40px] lg:text-[48px] font-bold text-textBlack leading-tight">
+                            Less Watching. More Making.
+                        </h2>
+
+                        <p className="text-brandGrey text-[16px] md:text-[18px] font-normal font-base leading-relaxed">
+                            Learn in a way that turns a new concept into something you can actually use.
+                        </p>
+                    </div>
+
+                    <div className="w-full">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+                            {program.map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="w-full flex flex-col bg-white rounded-[24px] p-[28px] justify-between shadow-sm"
+                                >
+                                    <div className="flex flex-col gap-[18px]">
+                                        <div className="text-textBlue">
+                                            {item.icon}
+                                        </div>
+                                        <h3 className="text-[24px] md:text-[28px] font-base font-bold text-brandDarkGrey leading-snug">
                                             {item.title}
                                         </h3>
-                                        <p className="text-[16px] font-base text-brandGrey leading-relaxed">
+                                        <p className="text-[15px] md:text-[16px] font-base text-brandGrey leading-relaxed">
                                             {item.description}
                                         </p>
                                     </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
 
-            <div className="w-[1440px] h-[262px] mx-auto pl-[96px] pr-[96px] pt-[88px] pb-[88px] bg-trackgreen flex flex-row lg:flex-row items-center justify-between gap-[64px]">
-                <div className="w-[100px] flex justify-center">
-                    <img
-                        src={cardComS}
-                        alt="Logo"
-                        className="w-[100px] h-[100px] object-cover"
-                    />
-                </div>
-                <div className="w-[1084px] flex flex-col items-start justify-between gap-[16px]">
-                    <h1 className="w-[1084px] font-base lg:text-[40px] font-bold  text-textBlack leading-tight">
-                        Different majors. Different starting points.<br />
-                        A place for all of them.
-                    </h1>
-                    <p className="w-[1084px] text-brandGrey text-[18px] font-regular font-base leading-relaxed">
-                        You don’t have to be the most experienced person in the room. Curiosity, kindness, and a willingness to learn are a good place to start.
-                    </p>
-                </div>
-            </div>
-
-            <div className="w-[1440px] mx-auto pl-[96px] pr-[96px] pt-[80px] pb-[80px] bg-brandWhite flex flex-row items-start justify-between gap-[40px]">
-                <div className="w-[400px] flex flex-col gap-[20px]">
-                        <div className="w-[800px] flex items-center gap-2">
-                        {/* Titik kustom */}
-                        <span className="w-[7px] h-[7px] rounded-full bg-brandBlue inline-block"></span>
-
-                        {/* Teks */}
-                        <span className="font-base text-[12px] font-medium tracking-wider text-brandGrey uppercase">
-                            A FEW GOOD QUESTIONS
-                        </span>
-                    </div>
-
-                    <h1 className="font-base lg:text-[48px] font-bold text-textBlack leading-tight">
-                        Wondering <br />
-                        where <br />
-                        to begin?
-                    </h1>
-
-                    <div className="flex items-center">
-                        <button className=" hover:bg-gray-50 text-textBlue text-[16px] font-base font-medium transition-all flex items-center gap-[12px]">
-                            Ask us a questions
-                            <ArrowRight size={20} />
-                        </button>
-                    </div>
-                </div>
-                {/* Section Tracks */}
-                <div className="w-[752px] flex flex-col gap-[24px]">
-                    <div className="grid grid-rows-3 gap-[24px]">
-                        {faqAnswers.map((item, index) => (
-                            <div
-                                key={index}
-                                className="w-[752px] flex flex-col"
-                            >
-                                {/* Teks & Konten */}
-                                <div className="w-[752px] flex flex-col  flex-1 gap-[24px]">
-                                    <div className="flex flex-col gap-[14px]">
-                                        <div className="flex flex-row gap-[24px]">
-                                            <p className="w-[704px] text-[20px] font-base font-medium text-brandDarkGrey leading-snug ">
-                                                {item.quest}
-                                            </p>
-                                            <div className="w-[24px] h-[24px] text-textBlue">
-                                            {item.icon}
-                                        </div>
-                                        </div>
-                                        <p className="text-[16px] font-base text-brandGrey leading-relaxed border-b border-lineGrey pb-[14px]">
-                                            {item.desc}
-                                        </p>
+                                    <div className="w-full border-t border-lineGrey flex flex-col mt-[24px] pt-[16px]">
+                                        <button className="inline-flex items-center gap-2 text-textBlue font-base font-medium text-[13px] hover:opacity-80 transition-opacity w-fit">
+                                            {item.link}
+                                            <ArrowRight size={18} />
+                                        </button>
                                     </div>
                                 </div>
+                            ))}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            {/* Section Project */}
+            <div className="w-full bg-brandWhite">
+                <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[96px] py-[60px] md:py-[88px] flex flex-col lg:flex-row items-center justify-between gap-[40px] lg:gap-[64px]">
+                    
+                    {/* Visual Card Kiri */}
+                    <div className="w-full lg:w-[592px] bg-brandLightYellow rounded-[32px] p-6 md:p-[40px] flex flex-col justify-between relative overflow-hidden gap-[24px]">
+
+                        <div className="flex items-center justify-between w-full">
+                            <span className="text-[12px] font-base font-normal tracking-wider text-brandGrey uppercase">
+                                IDEA → PROTOTYPE
+                            </span>
+                            <p className="font-base font-normal text-[24px] text-textBlue">
+                                {"</>"}
+                            </p>
+                        </div>
+
+                        <div className="w-full bg-white rounded-[24px] p-5 md:p-[26px] border border-lineGrey flex flex-col gap-[24px]">
+
+                            {/* Indikator Titik Tiga */}
+                            <div className="flex items-center gap-[8px]">
+                                <span className="w-[10px] h-[10px] rounded-full bg-brandRed"></span>
+                                <span className="w-[10px] h-[10px] rounded-full bg-amber-400"></span>
+                                <span className="w-[10px] h-[10px] rounded-full bg-brandGreen"></span>
                             </div>
-                        ))}
+
+                            <h3 className="w-full text-[24px] md:text-[32px] font-base font-bold text-textBlack leading-tight">
+                                A little less friction. <br />
+                                A better campus day.
+                            </h3>
+
+                            <div className="w-full flex flex-row items-center gap-[8px] md:gap-[12px]">
+                                {/* Discover */}
+                                <div className="flex-1 p-[12px] md:p-[16px] bg-trackblue rounded-[12px] font-base font-bold text-brandBlack text-[12px] md:text-[13px] text-center cursor-pointer">
+                                    Discover
+                                </div>
+
+                                {/* Connect */}
+                                <div className="flex-1 p-[12px] md:p-[16px] bg-trackgreen rounded-[12px] font-base font-bold text-brandBlack text-[12px] md:text-[13px] text-center cursor-pointer">
+                                    Connect
+                                </div>
+
+                                {/* Share */}
+                                <div className="flex-1 p-[12px] md:p-[16px] bg-brandLightOrange rounded-[12px] font-base font-bold text-brandBlack text-[12px] md:text-[13px] text-center cursor-pointer">
+                                    Share
+                                </div>
+                            </div>
+
+                            <p className="text-[14px] md:text-[16px] font-base text-brandGrey pt-[8px]">
+                                Start with a student need. Build a small, useful solution.
+                            </p>
+
+                        </div>
+
+                        <span className="text-[11px] font-base font-normal tracking-wider text-brandGrey uppercase">
+                            EXAMPLE PROJECT BRIEF · NOT A LAUNCHED PRODUCT
+                        </span>
+
+                    </div>
+
+                    {/* Teks Kanan */}
+                    <div className="w-full lg:w-[592px] flex flex-col gap-[28px]">
+
+                        <div className="flex items-center gap-2">
+                            <span className="w-[7px] h-[7px] rounded-full bg-brandBlue inline-block"></span>
+                            <span className="font-base text-[12px] font-medium tracking-wider text-brandGrey uppercase">
+                                BUILD SOMETHING THAT MATTERS
+                            </span>
+                        </div>
+
+                        <h2 className="font-base text-[32px] md:text-[40px] lg:text-[48px] font-bold text-textBlack leading-tight">
+                            Your next project could <br />
+                            start on campus
+                        </h2>
+                        
+                        <p className="text-brandGrey text-[16px] md:text-[18px] font-normal font-base leading-relaxed">
+                            What if finding a study partner, sharing resources, or navigating campus felt easier? Small, familiar problems can be the beginning of meaningful work.
+                        </p>
+                        <p className="text-brandGrey text-[15px] md:text-[16px] font-normal font-base leading-relaxed">
+                            Bring research, design, and development together. Try an idea, get feedback, and make the next version better.
+                        </p>
+
+                        <div className="flex items-center pt-2">
+                            <button className="hover:opacity-80 text-textBlue text-[16px] font-base font-medium transition-all flex items-center gap-[12px] w-fit">
+                                Explore project-based learning
+                                <ArrowRight size={20} />
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            {/* Section Get Started */}
+            <div className="w-full bg-brandWhite">
+                <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[96px] pt-[8px] pb-[60px] md:pb-[88px] flex flex-col items-start justify-between gap-[40px]">
+                    
+                    <div className="w-full max-w-[800px] flex flex-col gap-[18px]">
+                        <div className="flex items-center gap-2">
+                            <span className="w-[7px] h-[7px] rounded-full bg-brandBlue inline-block"></span>
+                            <span className="font-base text-[12px] font-medium tracking-wider text-brandGrey uppercase">
+                                MAKE YOUR FIRST MOVE
+                            </span>
+                        </div>
+
+                        <h2 className="font-base text-[32px] md:text-[40px] lg:text-[48px] font-bold text-textBlack leading-tight">
+                            You don't need to have it all <br />
+                            figured out
+                        </h2>
+                    </div>
+
+                    <div className="w-full">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+                            {participateJ.map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="w-full flex flex-col bg-white rounded-[24px] p-6 border border-lineGrey/50 shadow-sm"
+                                >
+                                    <div className="w-full flex flex-col flex-1 gap-[20px]">
+                                        <div className="flex flex-col gap-[18px]">
+                                            <div className="text-textBlue text-[36px] md:text-[44px] font-bold font-base">
+                                                {item.num}
+                                            </div>
+                                            <h3 className="text-[22px] md:text-[25px] font-base font-bold text-brandDarkGrey leading-snug border-t border-lineGrey pt-[20px]">
+                                                {item.title}
+                                            </h3>
+                                            <p className="text-[15px] md:text-[16px] font-base text-brandGrey leading-relaxed">
+                                                {item.description}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            {/* Banner Hijau / Different Majors */}
+            <div className="w-full bg-trackgreen">
+                <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[96px] py-[40px] md:py-[88px] flex flex-col md:flex-row items-center justify-between gap-[24px] md:gap-[64px]">
+                    <div className="w-[100px] h-[100px] flex justify-center shrink-0">
+                        <img
+                            src={cardComS}
+                            alt="Logo"
+                            className="w-[100px] h-[100px] object-cover"
+                        />
+                    </div>
+                    <div className="w-full lg:w-[1084px] flex flex-col items-start justify-between gap-[16px] text-center md:text-left">
+                        <h2 className="font-base text-[28px] md:text-[36px] lg:text-[40px] font-bold text-textBlack leading-tight">
+                            Different majors. Different starting points.<br />
+                            A place for all of them.
+                        </h2>
+                        <p className="text-brandGrey text-[16px] md:text-[18px] font-normal font-base leading-relaxed">
+                            You don’t have to be the most experienced person in the room. Curiosity, kindness, and a willingness to learn are a good place to start.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div className="w-[1440px] mx-auto pl-[96px] pr-[96px] pt-[64px] pb-[64px] bg-brandWhite flex flex-row items-start justify-between gap-[40px]">
-                <div className="w-[1248px]  bg-trackblue rounded-[32px] p-[48px] flex flex-row items-center justify-between relative overflow-hidden gap-[16px]">
-                    <div className="w-[844px] flex flex-col gap-[16px]">
-                        <div className="w-[800px] flex items-center gap-[10px]">
-                            {/* Titik kustom */}
-                            <span className="w-[7px] h-[7px] rounded-full bg-brandBlue inline-block"></span>
 
-                            {/* Teks */}
+            {/* Section FAQ */}
+            <div className="w-full bg-brandWhite">
+                <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[96px] py-[60px] md:py-[80px] flex flex-col lg:flex-row items-start justify-between gap-[40px] lg:gap-[64px]">
+                    
+                    {/* FAQ Kiri */}
+                    <div className="w-full lg:w-[400px] flex flex-col gap-[20px] shrink-0">
+                        <div className="flex items-center gap-2">
+                            <span className="w-[7px] h-[7px] rounded-full bg-brandBlue inline-block"></span>
                             <span className="font-base text-[12px] font-medium tracking-wider text-brandGrey uppercase">
-                                YOUR NEXT CHAPTER
+                                A FEW GOOD QUESTIONS
                             </span>
                         </div>
-                            <h2 className="w-[844px] text-[44px] font-base font-bold text-textBlack leading-tight">
+
+                        <h2 className="font-base text-[32px] md:text-[40px] lg:text-[48px] font-bold text-textBlack leading-tight">
+                            Wondering <br />
+                            where <br />
+                            to begin?
+                        </h2>
+
+                        <div className="flex items-center">
+                            <button className="hover:opacity-80 text-textBlue text-[16px] font-base font-medium transition-all flex items-center gap-[12px] w-fit">
+                                Ask us a question
+                                <ArrowRight size={20} />
+                            </button>
+                        </div>
+                    </div>
+                    
+                    {/* FAQ Kanan (List Pertanyaan) */}
+                    <div className="w-full lg:w-[752px] flex flex-col gap-[24px]">
+                        <div className="flex flex-col gap-[24px]">
+                            {faqAnswers.map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="w-full flex flex-col"
+                                >
+                                    <div className="flex flex-col flex-1 gap-[14px]">
+                                        <div className="flex flex-col gap-[14px]">
+                                            <div className="flex flex-row items-start justify-between gap-[16px]">
+                                                <h3 className="text-[18px] md:text-[20px] font-base font-medium text-brandDarkGrey leading-snug">
+                                                    {item.quest}
+                                                </h3>
+                                                <div className="w-[24px] h-[24px] text-textBlue shrink-0 pt-1">
+                                                    {item.icon}
+                                                </div>
+                                            </div>
+                                            <p className="text-[15px] md:text-[16px] font-base text-brandGrey leading-relaxed border-b border-lineGrey pb-[20px]">
+                                                {item.desc}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            {/* Banner Card Akhir / Next Chapter */}
+            <div className="w-full bg-brandWhite">
+                <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[96px] py-[64px]">
+                    <div className="w-full bg-trackblue rounded-[32px] p-8 md:p-[48px] flex flex-col lg:flex-row items-start lg:items-center justify-between relative overflow-hidden gap-[32px]">
+                        
+                        <div className="w-full lg:max-w-[844px] flex flex-col gap-[16px]">
+                            <div className="flex items-center gap-[10px]">
+                                <span className="w-[7px] h-[7px] rounded-full bg-brandBlue inline-block"></span>
+                                <span className="font-base text-[12px] font-medium tracking-wider text-brandGrey uppercase">
+                                    YOUR NEXT CHAPTER
+                                </span>
+                            </div>
+                            <h2 className="text-[32px] md:text-[44px] font-base font-bold text-textBlack leading-tight">
                                 Bring your curiosity. <br />
                                 We'll build from there. 
                             </h2>
-                            {/* Subteks Keterangan di Bawah */}
-                            <p className="w-[844px] text-[16px] font-base text-brandGrey pt-[8px]">
+                            <p className="text-[16px] font-base text-brandGrey pt-[8px]">
                                 Start with a student need. Build a small, useful solution.
                             </p>
-                    </div>
-                    <div className="w-[260px] flex flex-col gap-[16px]">
-                        <button className="w-[241px] bg-brandBlue text-white font-base font-medium px-6 py-3 rounded-[8px] shadow-md transition-all flex items-center gap-[16px]">
-                            Explore the overview
-                            <ArrowRight size={20} />
-                        </button>
-                        <button className="w-[198px] text-textBlue font-base font-medium rounded-[8px] flex items-center gap-[12px]">
-                            Talk to the community
-                            <ArrowRight size={20} />
-                        </button>
+                        </div>
+                        
+                        <div className="flex flex-col gap-[16px] w-full sm:w-auto shrink-0">
+                            <button className="w-full sm:w-[241px] bg-brandBlue text-white font-base font-medium px-6 py-3 rounded-[8px] shadow-md transition-all flex items-center justify-center sm:justify-start gap-[16px] hover:opacity-90">
+                                Explore the overview
+                                <ArrowRight size={20} />
+                            </button>
+                            <button className="w-full sm:w-[198px] text-textBlue font-base font-medium py-2 rounded-[8px] flex items-center justify-center sm:justify-start gap-[12px] hover:opacity-80">
+                                Talk to the community
+                                <ArrowRight size={20} />
+                            </button>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-            <div className="w-[1440px] mx-auto pl-[96px] pr-[96px] pt-[56px] pb-[28px] bg-brandLightGrey flex flex-row items-start justify-between gap-[40px]">
-                <div className="w-[1248px]  flex flex-col items-start justify-between relative overflow-hidden">
-                    <div className="w-[1248px] flex flex-row items-start justify-between pb-[40px] ">
-                        <div className="w-[480px] flex flex-col gap-[24px]">
-                            <div className="w-[382px] flex items-center gap-3">
-                                <img src={heroImage} alt="Logo" className="h-10" />
-                                
-                            </div>
-                            <p className="text-[16px] font-base font-regular  text-brandGrey">
-                                A student community for curious minds, shared learning, and technology with purpose.
-                            </p>
-                        </div>
-                        <div className="w-[150px] flex flex-col gap-[14px]">
-                            <p className="text-[16px] font-base font-bold  text-brandBlack">
-                            Explore
-                            </p>
-                            <p className="text-[15px] font-base font-regular  text-brandGrey">
-                            Home
-                            </p>
-                            <p className="text-[15px] font-base font-regular  text-brandGrey">
-                            About
-                            </p>
-                            <p className="text-[15px] font-base font-regular  text-brandGrey">
-                            Overview
-                            </p>
-                            <p className="text-[15px] font-base font-regular  text-brandGrey">
-                            Contact
-                            </p>
-                        </div>
-                        <div className="w-[260px] flex flex-col gap-[14px]">
-                            <p className="text-[16px] font-base font-bold  text-brandBlack">
-                            Keep in the loop
-                            </p>
-                            <p className="text-[15px] font-base font-regular  text-brandBlue">
-                            @gdgoc.ugm
-                            </p>
-                            <div className="w-[64px] flex flex-row gap-[16px]">
-                                <img
-                                    src={iconIg}
-                                    alt="Logo"
-                                    className="w-[24px] h-[24px] object-cover"
-                                />
-                                <img
-                                    src={iconYt}
-                                    alt="Logo"
-                                    className="w-[24px] h-[24px] object-cover"
-                                />
-                            </div>
-                            <p className="text-[15px] font-base font-regular  text-brandGrey">
-                            Learn together. Build together.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="w-[1248px] pt-[40px] border-t border-lineGrey gap-[16px]">
-
-                    </div>
-                    <div className="w-[1248px] flex flex-row justify-between ">
-                        <p className="text-[12px] font-base font-regular  text-brandGrey">
-                            © GDGoC Universitas Gadjah Mada • 2026/2027
-                        </p>
-                        <p className="text-[12px] font-base font-regular  text-brandGrey">
-                            Made for the campus. Open to possibilities.
-                        </p>
-                    </div>
-                    <div className="w-[1248px] flex items-center pt-[40px]">
-                        <div className="flex">
-                            <span className="w-[40px] h-[4px] bg-brandRed"></span>
-                            <span className="w-[40px] h-[4px] bg-brandOrange"></span>
-                            <span className="w-[40px] h-[4px] bg-brandGreen"></span>
-                            <span className="w-[40px] h-[4px] bg-brandBlue"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </>
     );
 
