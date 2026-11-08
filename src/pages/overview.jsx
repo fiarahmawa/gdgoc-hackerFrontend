@@ -348,7 +348,7 @@ export default function OverviewPage() {
             {/* Section Learn Journey */}
             <section className="w-full bg-brandWhite">
                 <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[96px] py-[80px] flex flex-col items-start justify-between gap-[40px]">
-                    <div className="max-w-[800px] flex flex-col gap-[18px]">
+                    <div className="max-w-[812px] flex flex-col gap-[18px]">
                         <div className="flex items-center gap-2">
                             <span className="w-[7px] h-[7px] rounded-full bg-brandBlue inline-block"></span>
                             <span className="font-base text-[12px] font-medium tracking-wider text-brandGrey uppercase">

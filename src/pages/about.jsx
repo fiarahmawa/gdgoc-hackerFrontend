@@ -1,4 +1,4 @@
-import heroAbt from '../assets/about.png';
+import heroAbt from '../assets/heroAbt.png';
 import diamondAbt from '../assets/diamnd.svg'; 
 import { BookOpen, Users, Code, Heart, ArrowRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
