@@ -91,7 +91,7 @@ export default function LandingPage() {
         <>
             {/* Hero Section */}
             <div className="w-full bg-brandWhite">
-                <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[96px] pt-[40px] md:pt-[72px] pb-[40px] md:pb-[64px] flex flex-col lg:flex-row items-center justify-between gap-[40px]">
+                <div className="w-full max-w-[1440px] max-h-[740px] mx-auto px-6 md:px-12 lg:px-[96px] pt-[40px] md:pt-[72px] pb-[40px] md:pb-[64px] flex flex-col lg:flex-row items-start justify-between gap-[40px]">
 
                     <div className="w-full lg:max-w-[620px] flex flex-col gap-[28px]">
                         <div className="flex items-center gap-2">
