@@ -355,7 +355,7 @@ export default function LandingPage() {
                             </p>
                         </div>
 
-                        <div className="w-full bg-white rounded-[24px] p-5 md:p-[26px] border border-lineGrey flex flex-col gap-[24px]">
+                        <div className="w-full bg-white rounded-[16px] p-5 md:p-[26px] border border-lineGrey flex flex-col gap-[24px]">
 
                             {/* Indikator Titik Tiga */}
                             <div className="flex items-center gap-[8px]">
@@ -371,22 +371,22 @@ export default function LandingPage() {
 
                             <div className="w-full flex flex-row items-center gap-[8px] md:gap-[12px]">
                                 {/* Discover */}
-                                <div className="flex-1 p-[12px] md:p-[16px] bg-trackblue rounded-[12px] font-base font-bold text-brandBlack text-[12px] md:text-[13px] text-center cursor-pointer">
+                                <div className="flex-1 p-[13px] md:p-[16px] bg-trackblue rounded-[12px] font-base font-bold text-brandBlack text-[12px] md:text-[13px] cursor-pointer">
                                     Discover
                                 </div>
 
                                 {/* Connect */}
-                                <div className="flex-1 p-[12px] md:p-[16px] bg-trackgreen rounded-[12px] font-base font-bold text-brandBlack text-[12px] md:text-[13px] text-center cursor-pointer">
+                                <div className="flex-1 p-[13px] md:p-[16px] bg-trackgreen rounded-[12px] font-base font-bold text-brandBlack text-[12px] md:text-[13px] cursor-pointer">
                                     Connect
                                 </div>
 
                                 {/* Share */}
-                                <div className="flex-1 p-[12px] md:p-[16px] bg-brandLightOrange rounded-[12px] font-base font-bold text-brandBlack text-[12px] md:text-[13px] text-center cursor-pointer">
+                                <div className="flex-1 p-[13px] md:p-[16px] bg-brandLightOrange rounded-[12px] font-base font-bold text-brandBlack text-[12px] md:text-[13px] cursor-pointer">
                                     Share
                                 </div>
                             </div>
 
-                            <p className="text-[14px] md:text-[16px] font-base text-brandGrey pt-[8px]">
+                            <p className="text-[13px] md:text-[13px] font-base text-brandGrey pt-[8px]">
                                 Start with a student need. Build a small, useful solution.
                             </p>
 
@@ -445,7 +445,7 @@ export default function LandingPage() {
 
                         <h2 className="font-base text-[32px] md:text-[40px] lg:text-[48px] font-bold text-textBlack leading-tight">
                             You don't need to have it all <br />
-                            figured out
+                            figured out.
                         </h2>
                     </div>
 
@@ -454,7 +454,7 @@ export default function LandingPage() {
                             {participateJ.map((item, index) => (
                                 <div
                                     key={index}
-                                    className="w-full flex flex-col bg-white rounded-[24px] p-6 border border-lineGrey/50 shadow-sm"
+                                    className="w-full flex flex-col bg-white rounded-[24px] p-6 border border-lineGrey"
                                 >
                                     <div className="w-full flex flex-col flex-1 gap-[20px]">
                                         <div className="flex flex-col gap-[18px]">
