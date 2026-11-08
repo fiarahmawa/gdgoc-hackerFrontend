@@ -1,16 +1,29 @@
-# React + Vite
+# GDGoC UGM Frontend Study Case
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Halo! Proyek ini dibuat sebagai bagian dari studi kasus pengembangan frontend untuk **Google Developer Groups on Campus (GDGoC) Universitas Gadjah Mada** periode 2026/2027. 
+---
 
-Currently, two official plugins are available:
+Tech Stack
+* React.js (Vite)
+* Tailwind CSS
+* Lucide React (Icons)
+* Vercel (Deployment)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+Fitur Utama
+* Responsive Design: Tampilan aman dan rapi dibuka lewat laptop, tablet, maupun HP (sudah pakai *mobile-first approach*).
+* Interactive Navbar: Dilengkapi dengan menu navigasi yang responsif dan *hamburger menu* untuk tampilan seluler.
+* Dynamic Data Rendering: Mengambil dan menampilkan data komunitas secara dinamis ke dalam bentuk kartu informasi.
+* Clean Components: Struktur kode dibagi menjadi komponen-komponen kecil agar lebih mudah dikelola.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+Clone repository ini:
+git clone [https://github.com/fiarahmawa/gdgoc-hackerFrontend.git](https://github.com/fiarahmawa/gdgoc-hackerFrontend.git)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Link Vercel: 
+https://gdgoc-hacker-frontend-fia.vercel.app/
+
+Link Video:
+https://drive.google.com/drive/folders/1GbYSiys2JY207mAirMowj2QLRbYboC57?usp=sharing
