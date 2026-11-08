@@ -24,3 +24,6 @@ git clone [https://github.com/fiarahmawa/gdgoc-hackerFrontend.git](https://githu
 
 Link Vercel: 
 https://gdgoc-hacker-frontend-fia.vercel.app/
+
+Link Video:
+https://drive.google.com/drive/folders/1GbYSiys2JY207mAirMowj2QLRbYboC57?usp=sharing
